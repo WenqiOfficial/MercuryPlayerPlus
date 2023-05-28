@@ -147,7 +147,7 @@ const seContext = new AudioContext
 //const bgmSrc = seContext.createMediaElementSource(bgm)
 //bgmSrc.connect(seContext.destination)
 let seBuffer = null
-fetch('59.adx.wav').then(r => r.arrayBuffer()).then(r => {
+fetch('note.wav').then(r => r.arrayBuffer()).then(r => {
   seContext.decodeAudioData(r, buf => {
     if (buf) {
       seBuffer = buf
@@ -1322,6 +1322,7 @@ se_volume.value = 100
 se_volume.addEventListener('change', () => {
   gain.gain.value = se_volume.value / 100
 })
+
 se_file.addEventListener('change', () => {
   const reader = new FileReader()
   reader.readAsArrayBuffer(se_file.files[0])
