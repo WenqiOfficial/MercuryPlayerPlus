@@ -6,7 +6,7 @@ Still updating...
 
 ## How to use?
 
-You can deployed by yourself! ( •̀ ω •́ )
+You can deploy by yourself! ( •̀ ω •́ )
 
 Or using my deployment( 
 
